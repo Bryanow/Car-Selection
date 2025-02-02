@@ -145,7 +145,6 @@ section {
         background-color: #838383;
         border-radius: 5px;
         border: 1px solid #000000;
-        transition: ;
     }
 
     & .active {
@@ -153,7 +152,6 @@ section {
         animation: neonGlow 1.5s infinite ease-in-out;
     }
 }
-
 
 .arrow-container {
     display: flex;

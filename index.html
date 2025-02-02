@@ -22,16 +22,41 @@
     </header>
 
     <!--Estruturando o centro do projeto-->
-    <section>
+    <section class="container">
         <div class="list">
+            <div class="item active">
+                <div class="car-img">
+                    <img class="car-model" src="src/img/1.png" alt="Imagen do carro">
+                </div>
+                
+                <div class="content">
+                    <p class="car-info">Único dono</p>
+                    <h2 class="car-name">911 Turbo</h2>
+                    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora asperiores quos numquam, exercitationem consequuntur quis? Ratione corrupti soluta consequatur deleniti et aut! Consequuntur odio, sequi deleniti architecto accusantium nulla temporibus.</p>
+                    <button class="know-more">Saiba Mais</button>
+                </div>
+            </div>
+
             <div class="item">
                 <div class="car-img">
                     <img class="car-model" src="src/img/2.png" alt="Imagen do carro">
                 </div>
                 
                 <div class="content">
-                    <p class="car-info">Único dono</p>
+                    <p class="car-info">Conersível</p>
                     <h2 class="car-name">Ferrari</h2>
+                    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora asperiores quos numquam, exercitationem consequuntur quis? Ratione corrupti soluta consequatur deleniti et aut! Consequuntur odio, sequi deleniti architecto accusantium nulla temporibus.</p>
+                    <button class="know-more">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="car-img">
+                    <img class="car-model" src="src/img/3.png" alt="Imagen do carro">
+                </div>
+                
+                <div class="content">
+                    <p class="car-info">2019</p>
+                    <h2 class="car-name">Lamborghini</h2>
                     <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora asperiores quos numquam, exercitationem consequuntur quis? Ratione corrupti soluta consequatur deleniti et aut! Consequuntur odio, sequi deleniti architecto accusantium nulla temporibus.</p>
                     <button class="know-more">Saiba Mais</button>
                 </div>
@@ -40,10 +65,10 @@
 
         <!--Criando os botões-->
         <div class="arrows">
-            <button class="arrow-left">
+            <button id="arrow-back">
                 <span class="material-symbols-outlined">chevron_left</span>
             </button>
-            <button class="arrow-right">
+            <button id="arrow-forward">
                 <span class="material-symbols-outlined">chevron_right</span>
             </button>
         </div>
@@ -51,12 +76,13 @@
         <!--Criado o indicador de produto-->
         <div class="indicators">
             <div class="number">01</div>
-            <ul class="step-counter">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
+            <ul id="counter-bar" class="step-counter">
+                <li class="bar active"></li>
+                <li class="bar"></li>
+                <li class="bar"></li>
             </ul>
         </div>
     </section>
+    <script src="src/js/index.js"></script>
 </body>
 </html>
