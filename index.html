@@ -4,11 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Selection</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_name">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/effects.css">
 </head>
 <body>
     <header>
-        <h1>Car Selection</h1>
+        <h1 class="title">Car Selection</h1>
+        <nav>
+            <ul class="ul-itens">
+                <li>Home</li>
+                <li>Carros</li>
+                <li>Fale Conosco</li>
+            </ul>
         </nav>
     </header>
+
+    <!--Estruturando o centro do projeto-->
+    <section>
+        <div class="list">
+            <div class="item">
+                <div class="car-img">
+                    <img class="car-model" src="src/img/2.png" alt="Imagen do carro">
+                </div>
+                
+                <div class="content">
+                    <p class="car-info">Único dono</p>
+                    <h2 class="car-name">Ferrari</h2>
+                    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora asperiores quos numquam, exercitationem consequuntur quis? Ratione corrupti soluta consequatur deleniti et aut! Consequuntur odio, sequi deleniti architecto accusantium nulla temporibus.</p>
+                    <button class="know-more">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Criando os botões-->
+        <div class="arrows">
+            <button class="arrow-left">
+                <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <button class="arrow-right">
+                <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+        </div>
+
+        <!--Criado o indicador de produto-->
+        <div class="indicators">
+            <div class="number">01</div>
+            <ul class="step-counter">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
