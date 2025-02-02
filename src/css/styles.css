@@ -1,0 +1,185 @@
+@keyframes neonGlow {
+    0% {box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;}
+    50% {box-shadow: 0 0 20px #39ff14, 0 0 40px #39ff14;}
+    100% {box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;}
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+header {
+    z-index: 1;
+    width: 80%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    gap: 100px;
+    align-items: center;
+}
+
+.ul-itens {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+
+.title {
+    width: 250px;
+}
+
+section {
+    background-image: radial-gradient(circle, #7200a0, #8e02a7, #470d5e);
+    height: 100vh;
+    position: relative;
+}
+
+.list {
+    width: 70vw;
+    margin: auto;
+    height: 100%;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        top: 49%;
+        transform: translateY(-50%);
+        background-image: radial-gradient(circle, #000000, #ffffff, #000000, #ffffff );
+        animation: neonGlow 1.5s infinite linear;
+    }
+}
+
+.item {
+    position: absolute;
+    inset: 0;
+}
+
+.car-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70%;
+}
+
+.car-model {
+    width: 90%;
+    transform: rotate(-22deg);
+}
+
+.content {
+    position: absolute;
+    right: 100px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+}
+
+.car-info {
+    font-weight: bold;
+}
+
+.car-name {
+    font-size: 60px;
+    line-height: 100px;
+}
+
+.lorem {
+    color: #838383;
+    font-size: 12px;
+    text-align: right;
+    max-width: 400px;
+}
+
+.know-more {
+    background-image: radial-gradient(circle, #beff1b, #119f0c);
+    border-radius: 30px;
+    height: 35px;
+    width: 120px;
+    text-transform: uppercase;
+    border: 2px solid #d200f8;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.know-more:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+.indicators {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 15px;
+}
+
+.number {
+    font-size: 50px;
+}
+
+.step-counter {
+    display: flex;
+    gap: 10px;
+
+    & li {
+        width: 50px;
+        height:5px;
+        background-color: #838383;
+        border-radius: 5px;
+        border: 1px solid #000000;
+        transition: ;
+    }
+
+    & .active {
+        background-image: radial-gradient(circle,  #c47de0, #8e02a7);
+        animation: neonGlow 1.5s infinite ease-in-out;
+    }
+}
+
+
+.arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrows {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    transform: translate(-50%, -25px);
+    top: 50%;
+    left: 50%;
+
+    & button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        scale: 2.5;
+        border-color: #34fd07;
+        cursor: pointer;
+
+    }
+    & button:hover {
+        animation: neonGlow 1.5s infinite ease-in-out;
+    }
+}
