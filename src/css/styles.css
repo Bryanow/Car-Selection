@@ -113,6 +113,7 @@ section {
 }
 
 .know-more:hover {
+    transition: 0.2s;
     filter: brightness(1.2);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
     transform: translateY(-2px);
@@ -120,10 +121,10 @@ section {
 
 .indicators {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translateX(-50%);
-    height: 200px;
+    height: 20px;
     width: 90vw;
     display: flex;
     flex-direction: column;
@@ -145,6 +146,7 @@ section {
         background-color: #838383;
         border-radius: 5px;
         border: 1px solid #000000;
+        transition: ;
     }
 
     & .active {
@@ -152,6 +154,7 @@ section {
         animation: neonGlow 1.5s infinite ease-in-out;
     }
 }
+
 
 .arrow-container {
     display: flex;
