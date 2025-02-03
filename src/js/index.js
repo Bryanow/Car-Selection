@@ -2,12 +2,15 @@ const arrowForward = document.getElementById('arrow-forward');
 const arrowBack = document.getElementById('arrow-back');
 const conterBar = document.getElementById('counter-bar');
 const cars = document.querySelectorAll('.list .item');
-const bars = document.querySelectorAll('.bar')
-const indicator = document.querySelector('.indicators')
+const bars = document.querySelectorAll('.bar');
+const indicator = document.querySelector('.indicators');
+let number = document.querySelector('.list')
 let actualCar = 0;
 let actualBar = 0;
 
+
 arrowForward.addEventListener('click', function () {
+    number.style.setProperty('--number', 1);
     hidePreviousCar();//esconde o carro anterior
     hidePreviousBar();//esconde a barra anterior
 
@@ -31,6 +34,7 @@ arrowForward.addEventListener('click', function () {
 });
 
 arrowBack.addEventListener('click', function () {
+    number.style.setProperty('--number', -1);
     hidePreviousCar();//esconde o carro anterior
     hidePreviousBar();//esconde a barra anterior
     

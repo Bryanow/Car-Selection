@@ -113,7 +113,7 @@ section {
 }
 
 .know-more:hover {
-    transition: 0.2s;
+    transition: 0.1s;
     filter: brightness(1.2);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
     transform: translateY(-2px);

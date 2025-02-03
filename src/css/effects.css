@@ -1,7 +1,9 @@
 section {
+    
     & .list {
-        & .item {            
-            transform: translateX(100vw);
+    --number: 1;
+        & .item { 
+            transform: translateX(calc(100vw * var(--number)));
             transition: 0.5s;
             opacity: 0;
 
@@ -14,7 +16,7 @@ section {
             }
             & .content {
                 & .car-info, .car-name, .lorem, .know-more {
-                    transform: translateX(200px);
+                    transform: translateX(calc(200px * var(--number)));
                     transition: 0.7s;
                     transition-delay: 0.3s;
                     opacity: 0;
