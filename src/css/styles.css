@@ -66,6 +66,18 @@ section {
     top: 50%;
     transform: translateY(-50%);
     width: 70%;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-color: #000000;
+        width: 90%;
+        height: 100px;
+        top: 150%;
+        left: 40px;
+        border-radius: 50%;
+        filter: blur(50px);
+    }
 }
 
 .car-model {
